@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>My Portfolio - Web</title>
+
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/main.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<header>
+			<div class="container">
+				<nav id="nav-main" class="navbar navbar-inverse navbar-fixed-top">
+					<div class="container">
+						<div class="navbar-header">
+							<button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="../index.html">HOME</a>
+						</div>
+
+						<div class="collapse navbar-collapse target">
+							<ul class="nav navbar-nav">
+								<li class=""><a href="../pages/embedded.html">Embedded</a></li>
+								<li class=""><a href="../pages/android.html">Android</a></li>
+								<li class="active"><a href="../pages/web.html">Web</a></li>
+								<li class=""><a href="../pages/windows.html">Windows</a></li>
+								<li class=""><a href="../pages/electronics.html">Electronics</a></li>
+								<li class=""><a href="../pages/professional.html">Professional</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<div class="row container">
+					<div class="col-sm-6">
+						<h1>My Portfolio - Web</h1>
+					</div>
+					<div class="col-sm-6 hidden-xs">
+						<h3>looking for a co-op opportunity from May to August, 2015</h3>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="container">
+			<section class="row-text">
+				<p>
+					<a href="javascript:void(0)" onclick="openAllAccordion()">
+						<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> View All
+					</a>
+					&nbsp;&nbsp;&nbsp;
+					<a href="javascript:void(0)" onclick="closeAllAccordion()">
+						<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span> View List
+					</a>
+				</p>
+			</section>
+
+			<div class="row">
+				<div class="col-sm-8">
+					<section id="gallery">
+
+						<!-- enable to open multiple panels by naming different id -->
+						<div class="panel-group" id="accordion-dummy" role="tablist" aria-multiselectable="true">
+							<!-- one work -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingLifeGame">
+									<h2 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseLifeGame" aria-expanded="false" aria-controls="collapseLifeGame">
+											Conway's Game of Life
+										</a>
+									</h2>
+								</div>
+								<div id="collapseLifeGame" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLifeGame">
+									<div class="panel-body">
+										<figure class="picture">
+											<img src="../images/web_lifegame_01.jpg" alt="Conway's Game of Life" title="Conway's Game of Life" width="100%"/>
+											<figcaption>Conway's Game of Life</figcaption>
+										</figure>
+										
+										<p>AAAAA</p>
+										
+										<figure class="information">
+											<dl>
+												<DT>Environment</DT>
+												<DD>HTML5, CSS, JavaScript</DD>
+												<DT>Where to get</DT>
+												<DD><a href="https://play.google.com/store/apps/details?id=jp.take_iwiw.asciicamera">Chrome App (link)</a></DD>
+												<DT>Source Code</DT>
+												<DD><a href="https://github.com/take-iwiw/AsciiCamera">GitHub (link)</a></DD>
+												<DT>Date</DT>
+												<DD><time datetime="2015-08">Aug, 2015</time></DD>
+											</dl>
+										</figure>
+
+										<p class="endCollapse"><a href="javascript:void(0)" onclick="closeMyAccordion('#collapseLifeGame')">
+											<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span> close
+										</a></p>
+									</div>
+								</div>
+							</div>
+							<!-- /one work -->
+
+							<!-- one work -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingDice">
+									<h2 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseDice" aria-expanded="false" aria-controls="collapseDice">
+											Dice Travel
+										</a>
+									</h2>
+								</div>
+								<div id="collapseDice" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDice">
+									<div class="panel-body">
+										<figure class="picture">
+											<img src="../images/web_dice_01.jpg" alt="Dice Travel" title="Dice Travel" width="100%"/>
+											<figcaption>Dice Travel</figcaption>
+										</figure>
+
+										<p>AAAA</p>
+															
+										<figure class="information">
+											<dl>
+												<DT>Environment</DT>
+												<DD>HTML5, CSS, JavaScript</DD>
+												<DT>Where to get</DT>
+												<DD><a href="https://play.google.com/store/apps/details?id=jp.take_iwiw.asciicamera">Chrome App (link)</a></DD>
+												<DT>Source Code</DT>
+												<DD><a href="https://github.com/take-iwiw/AsciiCamera">GitHub (link)</a></DD>
+												<DT>Date</DT>
+												<DD><time datetime="2013-08">Aug, 2013</time></DD>
+											</dl>
+										</figure>
+
+										<p class="endCollapse"><a href="javascript:void(0)" onclick="closeMyAccordion('#collapseDice')">
+											<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span> close
+										</a></p>
+									</div>
+								</div>
+							</div>
+							<!-- /one work -->
+
+						</div>
+
+					</section>
+				</div>
+
+				<div class="col-sm-4">
+					<section id="about">
+						<article>
+							<h2>About me</h2>
+							<p>Hello, my name is Takeshi. I'm a student at Conestoga College and seeking a co-op position as a software engineer in 2015 summer.</p>
+							<p>If you are interested, please contact me.</p>
+							<ul>
+								<li><a href="mailto:tiwanari2030@conestogac.on.ca">E-mail</a></li>
+								<li><a href="https://ca.linkedin.com/in/takeshii">Linkedin</a></li>
+								<li><a href="https://github.com/take-iwiw">GitHub</a></li>
+							</ul>
+						</article>
+					</section>
+				</div>
+
+			</div>
+		</main>
+
+		<footer>
+			<section class="container">
+				<p class="text-center">
+					copyright 2015 - Takeshi
+				</p>
+			</section>
+		</footer>
+
+
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/myscript.js"></script>
+	</body>
+</html>
+
