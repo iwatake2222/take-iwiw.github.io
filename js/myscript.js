@@ -29,3 +29,8 @@ window.onload=function(){
 		openAllAccordion();
 	}
 };
+
+$('img').click(function(){
+	window.location.href = this.src
+});
+
